@@ -1,0 +1,68 @@
+@font-face{
+    font-family: "NewYork Heavy";
+    src: url(AppleFonts/New\ York\ -\ Heavy.otf);
+}
+@font-face{
+    font-family: "NewYork Semibold";
+    src: url(AppleFonts/New\ York\ -\ Semibold.otf);
+}
+@font-face{
+    font-family: "Semibold";
+    src: url(AppleFonts/SF\ Pro\ -\ Semibold.otf);
+}
+@font-face{
+    font-family: "Semibold Rails";
+    src: url(AppleFonts/SF\ Pro\ -\ Semibold\ Rails.otf);
+}
+@font-face{
+    font-family: "Semibold Rounded";
+    src: url(AppleFonts/SF\ Pro\ -\ Semibold\ Rounded.otf);
+}
+@font-face{
+    font-family: "Semibold Soft";
+    src: url(AppleFonts/SF\ Pro\ -\ Semibold\ Soft.otf);
+}
+@font-face{
+    font-family: "Semibold Stencil";
+    src: url(AppleFonts/SF\ Pro\ -\ Semibold\ Stencil.otf);
+}
+
+#control-center-screen{
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+
+    transition: opacity 1s ease;
+
+    bottom: 0px;
+
+    backdrop-filter: blur(20px);
+
+    opacity: 0;
+
+    z-index: 1;
+}
+
+#control-center-swipe-area{
+    position: absolute;
+
+    width: 35%;
+    height: 5%;
+
+    bottom: 95%;
+    right: 0;
+
+    z-index: 3;
+}
+
+#control-center-home-swipe-area{
+    position: absolute;
+
+    width: 85%;
+    height: 5%;
+
+    bottom: 1%;
+    left: 50%;
+    transform: translate(-50%);
+}

@@ -1,0 +1,395 @@
+@font-face{
+    font-family: "NewYork Heavy";
+    src: url(AppleFonts/New\ York\ -\ Heavy.otf);
+}
+@font-face{
+    font-family: "NewYork Semibold";
+    src: url(AppleFonts/New\ York\ -\ Semibold.otf);
+}
+@font-face{
+    font-family: "Semibold";
+    src: url(AppleFonts/SF\ Pro\ -\ Semibold.otf);
+}
+@font-face{
+    font-family: "Semibold Rails";
+    src: url(AppleFonts/SF\ Pro\ -\ Semibold\ Rails.otf);
+}
+@font-face{
+    font-family: "Semibold Rounded";
+    src: url(AppleFonts/SF\ Pro\ -\ Semibold\ Rounded.otf);
+}
+@font-face{
+    font-family: "Semibold Soft";
+    src: url(AppleFonts/SF\ Pro\ -\ Semibold\ Soft.otf);
+}
+@font-face{
+    font-family: "Semibold Stencil";
+    src: url(AppleFonts/SF\ Pro\ -\ Semibold\ Stencil.otf);
+}
+
+.home-screen{
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+
+    border-radius: 33px;
+
+    transition: margin-top 1s ease;
+}
+
+.home-screen img{
+    width: 100%;
+    height: 100%;
+    border-radius: 33px;
+}
+
+.mini-time{
+    font-family: "Semibold Soft";
+    font-weight: 400;
+    font-size: 75%;
+
+    color: rgba(255,255,255,.9);
+
+    display: grid;
+    align-content: center;
+
+    text-align: center;
+
+    height: 100%;
+    width: 35%;
+}
+
+.quick-access{
+    position: absolute;
+
+    bottom: 0;
+
+    margin: 5%;
+
+    width: 90%;
+    height: 10%;
+
+    border-radius: 15px;
+
+    background-color: rgba(0,0,0,.45);
+    backdrop-filter: blur(25px);
+
+    display: flex;
+    justify-content: space-around;
+}
+
+.quick-app{
+    align-self: center;
+
+    width: 16%;
+    aspect-ratio: 1;
+}
+
+.quick-app-icon{
+    width: 100%;
+    aspect-ratio: 1;
+
+    overflow: hidden;
+
+    box-shadow: 0px 8px 32px 0px rgba(0,0,0,0.25);
+}
+
+.quick-app-icon img{
+    border-radius: 15%;
+}
+
+.nav-bar{
+    position: absolute;
+
+    bottom: 15%;
+    left: 50%;
+
+    transform: translate(-50%);
+
+    width: 25%;
+    height: 4%;
+
+    border-radius: 20px;
+
+    background-color: rgba(0,0,0,.45);
+    backdrop-filter: blur(25px);
+
+    text-align: center;
+
+    display: grid;
+    align-content: center;
+
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    font-weight: 500;
+    font-size: 75%;
+
+    color: rgba(255,255,255,.75);
+}
+
+.app-container{
+    position: absolute;
+
+    width: 90%;
+    height: 70%;
+
+    top: 7.5%;
+    margin: 5%;
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr ;
+    justify-content: space-around;
+}
+
+.app{
+    width: 90%;
+    height: 90%;
+
+    margin: 5%;
+}
+
+.app-icon{
+    width: 70%;
+    aspect-ratio: 1;
+
+    margin-left: 15%;
+
+    overflow: hidden;
+    box-shadow: 0px 8px 32px 0px rgba(0,0,0,0.25);
+}
+
+.app-icon img{
+    border-radius: 25%;
+
+    box-shadow: 0px 8px 32px 0px rgba(0,0,0,0.25);
+}
+
+.app-name{
+    width: 100%;
+    height: 20%;
+
+    margin-top: 7.5%;
+
+    display: grid;
+    align-content: center;
+
+    text-align: center;
+
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    font-weight: 500;
+    font-size: 50%;
+
+    text-wrap: nowrap;
+
+    color: rgba(255,255,255,.9);
+}
+
+.widget-1-2{
+    grid-column: span 2;
+
+    width: 95%;
+    height: 90%;
+
+    margin: 2.5%;
+}
+
+.widget-2-2{
+    grid-column: span 2;
+    grid-row: span 2;
+
+    width: 1fr;
+    height: 1fr;
+
+    margin: 2.5%;
+}
+
+.widget-2-4{
+    grid-column: span 4;
+    grid-row: span 2;
+
+    width: 97.5%;
+    height: 1fr;
+
+    margin: 1.25%;
+}
+
+.widget-2-2 .widget-contents{
+    aspect-ratio: 1;
+
+    width: 85%;
+    margin: 7.5%;
+
+    border-radius: 15%;
+
+    overflow: hidden;
+
+    box-shadow: 0px 8px 32px 0px rgba(0,0,0,0.25);
+}
+
+.widget-2-4 .widget-contents{
+
+    width: 94%;
+
+    aspect-ratio: 2.265;
+
+    margin: 3%;
+
+    border-radius: 15px;
+
+    overflow: hidden;
+
+    box-shadow: 0px 8px 32px 0px rgba(0,0,0,0.25);
+}
+
+#notes-widget-content{
+    background-color: rgb(26, 26, 28);
+}
+
+#notes-widget-content .notes-bannar{
+    height: 25%;
+    width: 100%;
+
+    background-image: linear-gradient(#FFD500, #F9BC00);
+}
+
+#notes-widget-content .notes-bannar span{
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    font-weight: 500;
+    font-size: 60%;
+
+    letter-spacing: .025em;
+
+    margin-left: 30%;
+
+    color: white;
+
+    text-shadow: 0px 0px 5px rgba(0,0,0,.2);
+}
+
+#notes-widget-content .dotted-line{
+    height: 3%;
+    width: 100%;
+
+    border-bottom: 2px dotted rgba(255,255,255,.25);
+}
+
+
+
+
+#reminders-widget-content{
+    background-color: rgb(26, 26, 28);
+}
+
+#reminders-widget-content .reminders-bannar{
+    height: 25%;
+    width: 100%;
+
+    display: flex;
+    justify-content: space-around;
+}
+
+#reminders-widget-content .reminders-bannar .title{
+    font-family: "Semibold Soft";
+    font-weight: 500;
+    font-size: 60%;
+
+    letter-spacing: .025em;
+
+    align-self: center;
+
+    color: rgb(0, 122, 255);
+
+    text-shadow: 0px 0px 5px rgba(0,0,0,.2);
+}
+
+#reminders-widget-content .reminders-bannar .count{
+    font-family: "Semibold Soft";
+    font-weight: 500;
+    font-size: 75%;
+
+    align-self: center;
+
+    letter-spacing: .025em;
+
+    color: white;
+
+    text-shadow: 0px 0px 5px rgba(0,0,0,.2);
+}
+
+
+
+#batteries-widget-content{
+    width: 95%;
+    height:77%;
+
+    margin-left: 2.5%;
+
+    backdrop-filter: blur(25px);
+    background-color: rgba(0,0,0,.45);
+
+    border-radius: 15px;
+
+    display: flex;
+    justify-content: space-around;
+}
+
+#batteries-widget-content .device-battery-container{
+    height: 90%;
+    width: 20%;
+
+    align-self: center;
+}
+
+.device-battery-container .meter{
+    stroke: rgba(0,255,0,.95);
+    stroke-width: 2px;
+
+    margin-top: 25%;
+
+    stroke-dasharray: 30;
+    stroke-dashoffset: 0;
+
+    fill: none;
+
+    rotate: -90deg;
+}
+
+.device-battery-container .meter-empty{
+    stroke: rgba(255, 255, 255, 0.25);
+    stroke-width: 2px;
+
+    margin-top: 25%;
+
+    fill: none;
+}
+
+.device-battery-container .percentage{
+    text-align: center;
+    color: white;
+
+    font-family: "Semibold Soft";
+    font-weight: 500;
+    font-size: 80%;
+}
+
+
+.widget-name{
+    width: 90%;
+    height: 1%;
+
+    margin-left: 5%;
+
+    display: grid;
+    align-content: center;
+
+    text-align: center;
+
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    font-weight: 500;
+    font-size: 50%;
+
+    text-wrap: nowrap;
+
+    color: rgba(255,255,255,.9);
+}

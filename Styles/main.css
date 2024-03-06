@@ -1,0 +1,167 @@
+@font-face{
+    font-family: "NewYork Heavy";
+    src: url(AppleFonts/New\ York\ -\ Heavy.otf);
+}
+@font-face{
+    font-family: "NewYork Semibold";
+    src: url(AppleFonts/New\ York\ -\ Semibold.otf);
+}
+@font-face{
+    font-family: "Semibold";
+    src: url(AppleFonts/SF\ Pro\ -\ Semibold.otf);
+}
+@font-face{
+    font-family: "Semibold Rails";
+    src: url(AppleFonts/SF\ Pro\ -\ Semibold\ Rails.otf);
+}
+@font-face{
+    font-family: "Semibold Rounded";
+    src: url(AppleFonts/SF\ Pro\ -\ Semibold\ Rounded.otf);
+}
+@font-face{
+    font-family: "Semibold Soft";
+    src: url(AppleFonts/SF\ Pro\ -\ Semibold\ Soft.otf);
+}
+@font-face{
+    font-family: "Semibold Stencil";
+    src: url(AppleFonts/SF\ Pro\ -\ Semibold\ Stencil.otf);
+}
+
+.iphone-15-pro-body{
+    position: absolute;
+
+    width: 2.78in;
+    height: 5.77in;
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    background-color: black;
+
+    border-radius: 40px;
+
+    box-shadow: 0px 8px 32px 0px rgba(0,0,0,0.7);
+
+    border: 2px solid #BAB9B3;
+
+}
+
+.touch-screen{
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    border-radius: 33px;
+
+    margin: 2%;
+
+    width: 96%;
+    height: 98%;
+    z-index: 100;
+
+    overflow: hidden;
+
+    background-color: black;
+
+    z-index: 1;
+}
+
+.dynamic-island{
+    position: absolute;
+
+    width: 30%;
+    height: 4%;
+
+    top: 1%;
+    left: 50%;
+
+    transform: translate(-50%);
+
+    border-radius: 40px;
+
+    background-color: black;
+
+    z-index: 2;
+
+    transition: width 0.3s ease;
+}
+
+.home-bar{
+    position: absolute;
+
+    width: 40%;
+    height: .75%;
+
+    bottom: 1%;
+    left: 30%;
+
+    border-radius: 20px;
+
+    background-color: white;
+}
+
+.system-info-container{
+    position: absolute;
+
+    width: 90%;
+    height: 5%;
+
+    margin-left: 2.5%;
+    top: .5%;
+
+    display: flex;
+
+    justify-content: space-between;
+}
+
+.system-info-container .provider{
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    font-weight: 500;
+    font-size: 65%;
+
+    color: rgba(255,255,255,.9);
+
+    display: grid;
+    align-content: center;
+
+    text-align: center;
+
+    height: 100%;
+    width: 35%;
+}
+
+.system-info-container svg{
+    margin: 15%;
+    fill: white;
+}
+
+.network-battery{
+    height: 100%;
+    width: 25%;
+
+    display: flex;
+}
+
+.network-battery div{
+    width: 100%;
+
+    display: grid;
+    align-content: center;
+}
+
+.control-center-bar{
+    position: absolute;
+
+    height: 6.5%;
+    width: 15%;
+    left: 80%;
+    top: 90%;
+
+    border-radius: 50px;
+
+    background-color: rgba(255,255,255,.5);
+
+    backdrop-filter: blur(10px);
+}

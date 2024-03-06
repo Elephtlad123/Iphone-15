@@ -1,0 +1,343 @@
+@font-face{
+    font-family: "NewYork Heavy";
+    src: url(AppleFonts/New\ York\ -\ Heavy.otf);
+}
+@font-face{
+    font-family: "NewYork Semibold";
+    src: url(AppleFonts/New\ York\ -\ Semibold.otf);
+}
+@font-face{
+    font-family: "Semibold";
+    src: url(AppleFonts/SF\ Pro\ -\ Semibold.otf);
+}
+@font-face{
+    font-family: "Semibold Rails";
+    src: url(AppleFonts/SF\ Pro\ -\ Semibold\ Rails.otf);
+}
+@font-face{
+    font-family: "Semibold Rounded";
+    src: url(AppleFonts/SF\ Pro\ -\ Semibold\ Rounded.otf);
+}
+@font-face{
+    font-family: "Semibold Soft";
+    src: url(AppleFonts/SF\ Pro\ -\ Semibold\ Soft.otf);
+}
+@font-face{
+    font-family: "Semibold Stencil";
+    src: url(AppleFonts/SF\ Pro\ -\ Semibold\ Stencil.otf);
+}
+
+.lock-screen{
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+
+    transition: bottom .0s ease;
+
+    bottom: 0%;
+
+    z-index: 1;
+
+    backdrop-filter: blur(25px);
+}
+
+.lock-wallpaper{
+    width: 100%;
+    height: 100%;
+
+    opacity: 1;
+
+    transition: opacity .25s ease;
+}
+
+.media-container{
+
+    position: absolute;
+
+    margin: 5%;
+
+    top: 62%;
+
+    width: 90%;
+    height: 21%;
+
+    border-radius: 15px;
+
+    background-color: rgba(0,0,0,.45);
+    backdrop-filter: blur(20px);
+
+    box-shadow: 0px 8px 32px 0px rgba(0,0,0,0.25);
+
+    display: grid;
+
+    grid-template-rows: 40% 20% 40%;
+}
+
+.info-container{
+    width: 95%;
+    height: 90%;
+
+    margin: 2.5%;
+
+    display: flex;
+}
+
+.song-image{
+    height: 90%;
+    margin: 1%;
+    aspect-ratio: 1;
+}
+
+.song-image img{
+    width: 100%;
+    border-radius: 15%;
+
+    box-shadow: 0px 8px 32px 0px rgba(0,0,0,0.25);
+}
+
+.details{
+    height: 60%;
+    width: 100%;
+
+    margin-top: 3.5%;
+    margin-left: 2%;
+
+    display: grid;
+    grid-template-rows: 60% 40%;
+}
+
+.title{
+    display: grid;
+    align-content: center;
+
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    font-weight: 500;
+
+    font-size: 80%;
+
+    margin-bottom: 0%;
+
+    color: rgba(255,255,255,.9);
+}
+
+.artist{
+    display: grid;
+    align-content: center;
+
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    font-weight: 500;
+
+    font-size: 70%;
+
+    color: rgba(255,255,255,.5);
+}
+
+.progress-container{
+    width: 95%;
+    height: 80%;
+
+    margin: 2.5%;
+
+    display: flex;
+    justify-content: space-around;
+
+    font-size: 50%;
+
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    font-weight: 500;
+
+    color: rgba(255, 255, 255, 0.75);
+}
+
+.length-time, .remaining-time{  
+    display: grid;
+    align-content: center;
+}
+
+
+.progress-bar{
+    height: 25%;
+    width: 80%;
+
+    border-radius: 50px;
+
+    background-color: rgba(255, 255, 255, 0.2);
+
+    margin-top: 3%;
+}
+
+.progress{
+    height: 100%;
+    width: 40%;
+
+    border-radius: 50px 0 0 50px;
+
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.controls-container{
+    width: 60%;
+    height: 75%;
+    margin: 2.5%;
+
+    margin-left: 50%;
+
+    transform: translate(-51%);
+
+    display: flex;
+    justify-content: space-around;
+}
+
+.controls-container div{
+    height: 100%;
+    aspect-ratio: 1;
+
+    border-radius: 50%;
+}
+
+.previous-icon, .skip-icon{
+    margin: 15%;
+    fill: white;
+}
+
+.pause-icon, .play-icon{
+    margin: 5%;
+    fill: white;
+}
+
+.controls-container .pause-icon{
+    visibility: hidden;
+}
+
+.clock{
+    position: absolute;
+
+    width: 80%;
+    height: 15%;
+
+    top: 10%;
+    left: 50%;
+
+    transform: translate(-50%);
+
+    display: grid;
+    align-content: center;
+    
+}
+
+.time{
+    text-align: center;
+
+    font-size: 3.5em;
+    font-weight: 500;
+    font-family: "Semibold Soft";
+
+    color: rgba(255,255,255,.8);
+    text-shadow: 0 0 5px rgba(0,0,0,.25);
+}
+
+.date{
+    position: absolute;
+
+    align-self: center;
+    text-align: center;
+
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%);
+
+    width: 80%;
+
+    font-size: .8em;
+    font-weight: 600;
+
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    font-weight: 500;
+
+    color: rgba(255,255,255,.75);
+    text-shadow: 0 0 5px rgba(0,0,0,.25);
+}
+
+.notifications{
+    position: absolute;
+
+    bottom: 6.5%;
+    left: 50%;
+
+    transform: translate(-50%);
+
+    width: 40%;
+    height: 3%;
+
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    font-weight: 500;
+    font-size: 70%;
+
+    color: rgba(255,255,255,.9);
+
+    display: flex;
+
+    align-content: center;
+}
+
+.notifications svg{
+    fill: white;
+}
+
+.notifications span{
+    text-align: center;
+    margin-top: 2%;
+    margin-left: 4%;
+}
+
+.shortcuts{
+    position: absolute;
+
+    bottom: 5%;
+    left: 50%;
+
+    width: 80%;
+    height: 6%;
+
+    transform: translate(-50%);
+
+    display: flex;
+
+    justify-content: space-between;
+}
+
+.shortcuts div{
+    height: 100%;
+    aspect-ratio: 1;
+    border-radius: 50px;
+
+    background-color: rgba(0,0,0,.4);
+    backdrop-filter: blur(20px);
+
+    display: grid;
+    align-content: center;
+}
+
+.camera-svg{
+    margin: 15%;
+    fill: white;
+}
+
+.torch-svg{
+    margin: 20%;
+    fill: white;
+}
+
+#lock-screen-swipe-area{
+    position: absolute;
+
+    width: 85%;
+    height: 5%;
+
+    bottom: 1%;
+    left: 50%;
+    transform: translate(-50%);
+
+    z-index: 3;
+}
